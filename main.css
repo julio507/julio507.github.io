@@ -1,0 +1,35 @@
+@keyframes spin
+{
+    0%, 100% 
+    {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+      
+    50% 
+    {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+html
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    background: linear-gradient( blue, lightblue );
+}
+
+#main
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#header
+{
+    animation: spin 10s infinite;
+}
