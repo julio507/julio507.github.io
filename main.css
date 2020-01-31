@@ -2,7 +2,7 @@
 {
     0%, 100% 
     {
-        transform: rotate3d(0, 1, 0, 0deg);
+        transform: rotate3d(0, 0, 0, 0deg);
     }
       
     50% 
@@ -29,7 +29,20 @@ body
     top: 50%;
 }
 
-#header
+#header p
 {
+    text-align: center;
     animation: spin 10s infinite;
+    color: white;
+}
+
+#body
+{
+    background: lightyellow;
+    border-radius: 5px;
+}
+
+#body p
+{
+    padding: 5px;
 }
