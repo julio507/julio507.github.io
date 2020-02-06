@@ -19,14 +19,9 @@ html
 
 body
 {
+    display: grid;
     background: linear-gradient( blue, lightblue );
-}
-
-#main
-{
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    grid-template-columns: 10% auto 10%;
 }
 
 #header p
@@ -34,10 +29,18 @@ body
     text-align: center;
     animation: spin 10s infinite;
     color: white;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+#main
+{
+    grid-column-start: 2;
 }
 
 #body
 {
+    grid-area: area;
     background: lightyellow;
     border-radius: 5px;
 }
