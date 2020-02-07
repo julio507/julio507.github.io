@@ -19,9 +19,10 @@ html
 
 body
 {
+    text-shadow: -1px -1px 1px red;
     display: grid;
     background: linear-gradient( blue, lightblue );
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: 30% auto 30%;
 }
 
 #header p
@@ -40,7 +41,6 @@ body
 
 #body
 {
-    grid-area: area;
     background: lightyellow;
     border-radius: 5px;
 }
