@@ -1,3 +1,11 @@
+@media screen and ( max-width: 425 )
+{
+    body
+    {
+        grid-template-columns: 10% auto 10%;
+    }
+}
+
 @keyframes spin
 {
     0%, 100% 
@@ -11,6 +19,45 @@
     }
 }
 
+@keyframes gradient
+{
+    0%, 100%
+    {
+        background-position:50% 0%
+    }
+    
+    50%
+    {
+        background-position:50% 100%
+    }
+}
+
+@-webkit-keyframes gradient 
+{
+    0%, 100%
+    {
+        background-position:50% 0%
+    }
+    
+    50%
+    {
+        background-position:50% 100%
+    }
+}
+
+@-moz-keyframes gradient 
+{
+    0%, 100%
+    {
+        background-position:50% 0%
+    }
+
+    50%
+    {
+        background-position:50% 100%
+    }
+}
+
 html
 {
     height: 100%;
@@ -21,8 +68,12 @@ body
 {
     text-shadow: -1px -1px 1px red;
     display: grid;
-    background: linear-gradient( blue, lightblue );
+    background: linear-gradient( blue, orange );
     grid-template-columns: 30% auto 30%;
+    animation: gradient 5s ease infinite;
+    -webkit-animation: gradient 5s ease infinite;
+    -moz-animation: gradient 300s ease infinite;
+    background-size: 100% 200%;
 }
 
 #header p
