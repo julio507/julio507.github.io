@@ -61,7 +61,7 @@ body
     text-shadow: -0.5px -0.5px 1px red;
     display: grid;
     background: linear-gradient( darkblue, lightblue, darkblue );
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: auto auto auto;
     animation: gradient 300s ease infinite;
     -webkit-animation: gradient 300s ease infinite;
     -moz-animation: gradient 100s ease infinite;
